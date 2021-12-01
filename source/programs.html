@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="utf-8">
-  <title>HTML Academy: Кэт энерджи</title>
+  <title>HTML Academy: Кэт энерджи: Подбор программы</title>
 </head>
 
 <body class="page__body">
@@ -24,49 +24,49 @@
   </header>
   <main class="page-programs">
     <h1 class="visually-hidden">Cat Energy. Подбор программы</h1>
-    <section class="programs__content">
+    <section class="programs">
       <h2 class="programs__title">Подбор программы</h2>
       <p class="programs__text">Заполните анкету, и мы подберем программу питания для вашего кота</p>
       <form class="programs__form" action="https://echo.htmlacademy.ru/" method="get">
-        <label class="programs__form--label" for="name">Имя:*</label>
-        <input class="programs__form--field" placeholder="Барсик" type="text" name="name" id="name" required>
-        <label class="programs__form--label" for="weight">Вес(кг):*</label>
-        <input class="programs__form--field" placeholder="7" type="number" name="weight" id="weight" required>
-        <label class="programs__form--label" for="age">Возраст(лет):</label>
-        <input class="programs__form--field" placeholder="7" type="number" name="age" id="age">
+        <label class="programs__form-label" for="name">Имя:*</label>
+        <input class="programs__form-field" placeholder="Барсик" type="text" name="name" id="name" required>
+        <label class="programs__form-label" for="weight">Вес(кг):*</label>
+        <input class="programs__form-field" placeholder="7" type="number" name="weight" id="weight" required>
+        <label class="programs__form-label" for="age">Возраст(лет):</label>
+        <input class="programs__form-field" placeholder="7" type="number" name="age" id="age">
         <ul class="programs__list">
           <li class="programs__item">
-            <label class="programs__item--label">
-              <input class="visually-hidden programs__item--input" type="radio" name="program" value="slimming" checked>
-              <span class="programs__item--text">Похудение</span>
+            <label class="programs__item-label">
+              <input class="visually-hidden programs__item-input" type="radio" name="program" value="slimming" checked>
+              <span class="programs__item-text">Похудение</span>
             </label>
           </li>
           <li class="programs__item">
-            <label class="programs__item--label">
-              <input class="visually-hidden programs__item--input" type="radio" name="program" value="weight_gain">
-              <span class="programs__item--text">Набор массы</span>
+            <label class="programs__item-label">
+              <input class="visually-hidden programs__item-input" type="radio" name="program" value="weight_gain">
+              <span class="programs__item-text">Набор массы</span>
             </label>
           </li>
           <li class="programs__item">
-            <label class="programs__item--label">
-              <input class="visually-hidden programs__item--text-input" type="radio" name="program" value="advice">
-              <span class="programs__item--text">Не знаю (Нужен ваш совет)</span>
+            <label class="programs__item-label">
+              <input class="visually-hidden programs__item-text-input" type="radio" name="program" value="advice">
+              <span class="programs__item-text">Не знаю (Нужен ваш совет)</span>
             </label>
           </li>
         </ul>
         <fieldset class="programs__contacts">
-          <legend class="programs__contacts--subtitle">Контактные данные (владельца кота)</legend>
-          <label class="programs__contacts--label" for="email">E-mail:*</label>
-          <input class="programs__contacts--field" placeholder="kuklachev@gmail.com" type="email" name="email" id="email" required>
-          <label class="programs__contacts--label" for="phone">Телефон:*</label>
-          <input class="programs__contacts--field" placeholder="8 (960) 900-60-90" type="tel" name="phone" id="phone">
+          <legend class="programs__contacts-subtitle">Контактные данные (владельца кота)</legend>
+          <label class="programs__contacts-label" for="email">E-mail:*</label>
+          <input class="programs__contacts-field" placeholder="kuklachev@gmail.com" type="email" name="email" id="email" required>
+          <label class="programs__contacts-label" for="phone">Телефон:*</label>
+          <input class="programs__contacts-field" placeholder="8 (960) 900-60-90" type="tel" name="phone" id="phone">
         </fieldset>
         <fieldset class="programs__comment">
-          <legend class="programs__comment--subtitle">Комментарий</legend>
-          <textarea class="programs__comment--text" placeholder="Расскажите обо всех повАдках кота" name="comment"></textarea>
+          <legend class="programs__comment-subtitle">Комментарий</legend>
+          <textarea class="programs__comment-text" placeholder="Расскажите обо всех повАдках кота" name="comment"></textarea>
         </fieldset>
         <fieldset class="programs__add-info">
-          <legend class="programs__add-info--subtitle">Дополнительно</legend>
+          <legend class="programs__add-info-subtitle">Дополнительно</legend>
           <ul class="programs__add-info-list">
             <li class="programs__add-info-item">
               <label class="programs__add-info-label">
@@ -94,17 +94,17 @@
             </li>
           </ul>
         </fieldset>
-        <button class="programs__form--submit" type="submit">Отправить заявку</button>
+        <button class="programs__form-submit" type="submit">Отправить заявку</button>
       </form>
-      <p class="programs__content--text">* — Обязательные поля</p>
+      <p class="programs__content-text">* — Обязательные поля</p>
     </section>
     <section class="contacts">
       <div class="contacts__wrapper">
         <h2 class="visuallly-hidden">Контакты</h2>
-        <h3 class="contacts__subtitle">Приглашаем к сотрудничеству дилеров!</h2>
+        <h3 class="contacts__subtitle">Приглашаем к сотрудничеству дилеров!</h3>
           <address class="contacts__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</address>
       </div>
-      <img class="contacts_map" src="img/contacts/location.png" alt="Карта с местоположением офиса" width="320"
+      <img class="contacts__map" src="img/contacts/location.png" alt="Карта с местоположением офиса" width="320"
         height="362">
     </section>
   </main>
