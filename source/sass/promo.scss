@@ -1,6 +1,5 @@
 .promo {
-  background-color: rgba(104, 183, 56, 0.85);
-  background: linear-gradient(to bottom, rgba(104, 183, 56, 0.85) 64%,#ffffff 64%, #ffffff 36%);
+  background: linear-gradient(to bottom, rgba(104, 183, 56, 0.85) 64%, #ffffff 64%, #ffffff 36%);
   margin-bottom: 20px;
 }
 
@@ -37,7 +36,7 @@
 .promo__link {
   text-decoration: none;
   color: #ffffff;
-  background: #68B738;
+  background: #68b738;
   display: block;
   width: 280px;
   height: 40px;
@@ -46,13 +45,13 @@
   &:hover {
     background: #5eaa2f;
   }
-  
-  &:active span{
+
+  &:active span {
     opacity: 0.3;
   }
 }
 
-.promo__link--text{
+.promo__link--text {
   display: block;
   font-family: "Oswald", sans-serif;
   font-weight: normal;
