@@ -1,0 +1,84 @@
+.live-example {
+  background-color: #eaeaea;
+  padding-bottom: 40px;
+}
+
+.live-example__title {
+  font-family: "Oswald", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 36px;
+  line-height: 40px;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.live-example__text {
+  line-height: 18px;
+  color: #444444;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 20px;
+}
+
+.live-example__list {
+  margin: 0 auto;
+  padding: 0;
+  margin-bottom: 20px;
+  display: flex;
+}
+
+.live-example__number {
+  font-family: "Oswald", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 24px;
+  text-align: center;
+  color: #000000;
+  margin-bottom: 8px;
+}
+
+.live-example__description {
+  font-size: 12px;
+  line-height: 100%;
+  text-align: center;
+  color: #444444;
+  margin: 0;
+  margin-right: 32px;
+}
+
+.live-example__costs-wrapper {
+  margin-bottom: 40px;
+}
+
+.live-example__costs {
+  font-family: "Oswald", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 20px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.compare-cats {
+  display: flex;
+  flex-direction: column;
+}
+
+.compare-cats__image {
+  margin-bottom: 15px;
+}
+
+.compare-cats__text {
+  font-family: "Oswald", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #000000;
+}
