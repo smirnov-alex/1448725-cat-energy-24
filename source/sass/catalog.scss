@@ -59,6 +59,7 @@
   height: 40px;
   padding: 0;
   border: none;
+  cursor: pointer;
 
   &:hover {
     background: #5eaa2f;
@@ -114,6 +115,16 @@
   height: 40px;
   padding: 0;
   border: none;
+  cursor: pointer;
+
+  &:hover,
+  &:active {
+    background: #ebebeb;
+  }
+
+  &:active span {
+    opacity: 0.3;
+  }
 }
 
 .catalog__show-more-button--text {
