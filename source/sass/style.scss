@@ -1,1 +1,50 @@
 // Начните писать стили здесь
+@import "page-header.scss";
+@import "main-nav.scss";
+@import "promo.scss";
+@import "programs.scss";
+@import "how-it-works.scss";
+@import "live-example.scss";
+@import "contacts.scss";
+@import "page-footer.scss";
+@import "catalog.scss";
+@import "additional-items.scss";
+@import "promotion.scss";
+@import "programs-inner.scss";
+
+@font-face {
+  font-family: "Oswald";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/oswaldregular.woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Oswald";
+  font-style: medium;
+  font-weight: 500;
+  src: url("../fonts/oswaldmedium.woff2");
+  font-display: swap;
+}
+
+body {
+  background: #ffffff;
+  color: #000000;
+  font-family: "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 14px;
+  font-style: normal;
+  font-weight: normal;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}

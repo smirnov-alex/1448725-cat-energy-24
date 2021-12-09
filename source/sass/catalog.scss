@@ -1,0 +1,143 @@
+$special-dark-grey-2: #222222;
+$show-more-hover: #ebebeb;
+
+.catalog__title {
+  font-family: "Oswald", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 36px;
+  line-height: 36px;
+  color: $black;
+  margin: 0;
+  padding: 0;
+  margin-top: 27px;
+  margin-bottom: 49px;
+}
+
+.catalog__list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.catalog__item {
+  margin-bottom: 33px;
+}
+
+.catalog__item-name {
+  font-family: "Oswald", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: $special-dark-grey-2;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 18px;
+}
+
+.catalog__description-list {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 22px;
+}
+
+.catalog__parameter,
+.catalog__value {
+  font-family: "Arial", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 16px;
+  color: $special-dark-grey;
+}
+
+.button__order {
+  text-decoration: none;
+  color: $white;
+  background: $green-base;
+  display: block;
+  width: 280px;
+  height: 40px;
+  padding: 0;
+  border: none;
+  cursor: pointer;
+
+  &:hover {
+    background: $green-hover;
+  }
+
+  &:active span {
+    opacity: 0.3;
+  }
+
+  &--text {
+    display: block;
+    font-family: "Oswald", sans-serif;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 10px 44px;
+  }
+}
+
+.catalog__add-info {
+  margin-top: 3px;
+  margin-bottom: 48px;
+}
+
+.catalog__subtitle {
+  font-family: "Oswald", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: $special-black;
+  margin-top: 53px;
+  margin-bottom: 8px;
+}
+
+.catalog__subtext {
+  font-size: 12px;
+  line-height: 16px;
+  color: $special-dark-grey;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 23px;
+}
+
+.catalog__show-more-button {
+  text-decoration: none;
+  background: $basic-grey;
+  display: block;
+  width: 280px;
+  height: 40px;
+  padding: 0;
+  border: none;
+  cursor: pointer;
+
+  &:hover,
+  &:active {
+    background: $show-more-hover;
+  }
+
+  &:active span {
+    opacity: 0.3;
+  }
+
+  &--text {
+    display: block;
+    font-family: "Oswald", sans-serif;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 10px 44px;
+    color: $special-dark-grey;
+  }
+}

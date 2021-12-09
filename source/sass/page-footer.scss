@@ -1,0 +1,37 @@
+.page-footer {
+  background-color: $basic-grey;
+}
+
+.page-footer__wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.page-footer__link {
+  margin-top: 39px;
+  margin-bottom: 52px;
+}
+
+.social__list {
+  display: flex;
+  justify-content: space-around;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 43px;
+}
+
+.page-footer__copyright {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 22px;
+}
+
+.page-footer__text {
+  font-family: "Arial", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 18px;
+  color: $special-dark-grey;
+}

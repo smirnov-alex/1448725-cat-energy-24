@@ -1,0 +1,44 @@
+.additional-items__title {
+  font-family: "Oswald", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 24px;
+  color: $black;
+  margin-bottom: 49px;
+}
+
+.additional-items__list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.additional-items__item {
+  margin-bottom: 31px;
+  display: flex;
+  flex-direction: column;
+}
+
+.additional-items__text {
+  font-family: "Oswald", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 16px;
+  text-transform: uppercase;
+  color: $special-dark-grey-2;
+  margin-bottom: 13px;
+}
+
+.additional-items__wrapper {
+  margin-bottom: 15px;
+  display: flex;
+  justify-content: space-between;
+  width: 280px; /* для лучшего восприятия на данный момент */
+}
+
+.additional-items__amount,
+.additional-items__price {
+  color: $special-dark-grey;
+}

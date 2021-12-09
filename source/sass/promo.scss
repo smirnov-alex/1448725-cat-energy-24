@@ -1,0 +1,69 @@
+$white: #ffffff;
+$green-base: #68b738;
+$green-hover: #5eaa2f;
+$green-back: rgba(104, 183, 56, 0.85);
+
+.promo {
+  background: linear-gradient(to bottom, $green-back 64%, $white 64%, $white 36%);
+  margin-bottom: 20px;
+}
+
+.promo__title {
+  color: $white;
+  font-family: "Oswald", sans-serif;
+  font-size: 36px;
+  line-height: 36px;
+  text-align: center;
+  font-weight: normal;
+  font-style: normal;
+  margin: 0;
+  padding-top: 27px;
+  margin-bottom: 25px;
+}
+
+.promo__slogan {
+  font-family: "Oswald", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  text-transform: uppercase;
+  text-align: center;
+  color: $white;
+  margin-bottom: 29px;
+}
+
+.promo__image {
+  margin: 0 auto;
+  padding: 0;
+  display: block;
+  margin-bottom: 3px;
+}
+
+.promo__link {
+  text-decoration: none;
+  color: $white;
+  background: $green-base;
+  display: block;
+  width: 280px;
+  height: 40px;
+  margin: 0 auto;
+  padding: 0;
+  border: none;
+
+  &:hover {
+    background: $green-hover;
+  }
+
+  &:active span {
+    opacity: 0.3;
+  }
+
+  &--text {
+    display: block;
+    font-family: "Oswald", sans-serif;
+    font-weight: normal;
+    line-height: 18px;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 11px 44px;
+  }
+}
