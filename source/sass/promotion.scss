@@ -4,7 +4,7 @@
 }
 
 .promotion__wrapper {
-  background-color: rgba(104, 183, 56, 0.85);
+  background-color: $green-back;
 }
 
 .promotion__image {
@@ -13,7 +13,7 @@
 }
 
 .promotion__text {
-  color: #ffffff;
+  color: $white;
   margin: 0;
   padding: 0;
   padding-bottom: 43px;

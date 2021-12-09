@@ -4,7 +4,7 @@
   font-weight: normal;
   font-size: 24px;
   line-height: 24px;
-  color: #000000;
+  color: $black;
   margin-bottom: 49px;
 }
 
@@ -27,7 +27,7 @@
   font-size: 16px;
   line-height: 16px;
   text-transform: uppercase;
-  color: #222222;
+  color: $special-dark-grey-2;
   margin-bottom: 13px;
 }
 
@@ -40,5 +40,5 @@
 
 .additional-items__amount,
 .additional-items__price {
-  color: #444444;
+  color: $special-dark-grey;
 }

@@ -1,10 +1,12 @@
+$form-border: #e7e7e7;
+
 .programs-inner__title {
   font-family: "Oswald", sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 36px;
   line-height: 36px;
-  color: #000000;
+  color: $black;
   margin: 0;
   padding: 0;
   margin-top: 25px;
@@ -20,7 +22,7 @@
   font-weight: normal;
   line-height: 18px;
   text-transform: uppercase;
-  color: #000000;
+  color: $black;
 }
 
 .programs-inner__form-label {
@@ -30,7 +32,7 @@
   font-size: 16px;
   line-height: 18px;
   text-transform: uppercase;
-  color: #444444;
+  color: $special-dark-grey;
   margin-right: 13px;
 }
 
@@ -41,21 +43,21 @@
   font-size: 16px;
   line-height: 18px;
   text-transform: uppercase;
-  color: #444444;
-  border: 1px solid #e7e7e7;
+  color: $special-dark-grey;
+  border: 1px solid $form-border;
   box-sizing: border-box;
   height: 45px;
   padding: 13px 15px;
-}
 
-.programs-inner__form-field::-webkit-input-placeholder {
-  font-family: "Oswald", sans-serif;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 16px;
-  line-height: 18px;
-  text-transform: uppercase;
-  color: #444444;
+  &::-webkit-input-placeholder {
+    font-family: "Oswald", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 18px;
+    text-transform: uppercase;
+    color: $special-dark-grey;
+  }
 }
 
 .programs-inner__list {
@@ -77,7 +79,7 @@
   font-size: 16px;
   line-height: 18px;
   text-transform: uppercase;
-  color: #222222;
+  color: $special-dark-grey-2;
 }
 
 .programs-inner__contacts {
@@ -90,7 +92,7 @@
   font-weight: normal;
   font-size: 24px;
   line-height: 26px;
-  color: #000000;
+  color: $black;
 }
 
 .programs-inner__comment {
@@ -119,12 +121,12 @@
   font-size: 16px;
   line-height: 18px;
   text-transform: uppercase;
-  color: #000000;
+  color: $black;
 }
 
 .programs-inner__content-text {
   line-height: 16px;
-  color: #000000;
+  color: $black;
   margin-bottom: 32px;
 }
 

@@ -1,5 +1,7 @@
+$live-example-back: #eaeaea;
+
 .live-example {
-  background-color: #eaeaea;
+  background-color: $live-example-back;
   padding-bottom: 40px;
 }
 
@@ -15,7 +17,7 @@
 
 .live-example__text {
   line-height: 18px;
-  color: #444444;
+  color: $special-dark-grey;
   margin: 0;
   padding: 0;
   margin-bottom: 20px;
@@ -35,7 +37,7 @@
   font-size: 24px;
   line-height: 24px;
   text-align: center;
-  color: #000000;
+  color: $black;
   margin-bottom: 8px;
 }
 
@@ -43,7 +45,7 @@
   font-size: 12px;
   line-height: 100%;
   text-align: center;
-  color: #444444;
+  color: $special-dark-grey;
   margin: 0;
   margin-right: 32px;
 }
@@ -60,7 +62,7 @@
   line-height: 20px;
   text-align: center;
   text-transform: uppercase;
-  color: #000000;
+  color: $black;
 }
 
 .compare-cats {
@@ -80,5 +82,5 @@
   line-height: 20px;
   text-align: center;
   text-transform: uppercase;
-  color: #000000;
+  color: $black;
 }

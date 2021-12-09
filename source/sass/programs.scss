@@ -1,4 +1,5 @@
 $special-dark-grey: #444444;
+$basic-grey: #f2f2f2;
 
 .programs {
   margin-bottom: 20px;
@@ -13,14 +14,8 @@ $special-dark-grey: #444444;
   display: flex;
   flex-direction: column;
   margin-bottom: 20px;
-  background-color: #f2f2f2;
+  background-color: $basic-grey;
   text-align: center;
-}
-
-.programs__title--wrapper {
-  display: flex;
-  margin: 0 auto;
-  margin-bottom: 22px;
 }
 
 .programs__title {
@@ -31,6 +26,12 @@ $special-dark-grey: #444444;
   line-height: 37px;
   text-transform: uppercase;
   margin-left: 19px;
+
+  &--wrapper {
+    display: flex;
+    margin: 0 auto;
+    margin-bottom: 22px;
+  }
 }
 
 .programs__description {
@@ -47,6 +48,6 @@ $special-dark-grey: #444444;
   line-height: 16px;
   text-transform: uppercase;
   text-decoration: none;
-  color: #000000;
+  color: $black;
   margin-bottom: 18px;
 }

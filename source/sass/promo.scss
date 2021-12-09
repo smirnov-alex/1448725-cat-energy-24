@@ -1,10 +1,15 @@
+$white: #ffffff;
+$green-base: #68b738;
+$green-hover: #5eaa2f;
+$green-back: rgba(104, 183, 56, 0.85);
+
 .promo {
-  background: linear-gradient(to bottom, rgba(104, 183, 56, 0.85) 64%, #ffffff 64%, #ffffff 36%);
+  background: linear-gradient(to bottom, $green-back 64%, $white 64%, $white 36%);
   margin-bottom: 20px;
 }
 
 .promo__title {
-  color: #ffffff;
+  color: $white;
   font-family: "Oswald", sans-serif;
   font-size: 36px;
   line-height: 36px;
@@ -22,7 +27,7 @@
   font-weight: normal;
   text-transform: uppercase;
   text-align: center;
-  color: #ffffff;
+  color: $white;
   margin-bottom: 29px;
 }
 
@@ -35,8 +40,8 @@
 
 .promo__link {
   text-decoration: none;
-  color: #ffffff;
-  background: #68b738;
+  color: $white;
+  background: $green-base;
   display: block;
   width: 280px;
   height: 40px;
@@ -45,20 +50,20 @@
   border: none;
 
   &:hover {
-    background: #5eaa2f;
+    background: $green-hover;
   }
 
   &:active span {
     opacity: 0.3;
   }
-}
 
-.promo__link--text {
-  display: block;
-  font-family: "Oswald", sans-serif;
-  font-weight: normal;
-  line-height: 18px;
-  text-align: center;
-  text-transform: uppercase;
-  padding: 11px 44px;
+  &--text {
+    display: block;
+    font-family: "Oswald", sans-serif;
+    font-weight: normal;
+    line-height: 18px;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 11px 44px;
+  }
 }

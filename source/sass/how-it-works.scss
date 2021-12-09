@@ -9,7 +9,7 @@
   font-weight: normal;
   line-height: 40px;
   text-align: center;
-  color: #000000;
+  color: $black;
   margin: 0;
   padding: 0;
   margin-bottom: 40px;
@@ -31,6 +31,6 @@
 .how-it-works__text {
   font-family: "Arial", sans-serif;
   line-height: 18px;
-  color: #444444;
+  color: $special-dark-grey;
   margin-left: 20px;
 }

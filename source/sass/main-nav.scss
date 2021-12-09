@@ -1,3 +1,5 @@
+$black: #000000;
+
 .main-nav {
   display: flex;
 }
@@ -25,7 +27,7 @@
 }
 
 .main-nav__link {
-  color: #000000;
+  color: $black;
   font-family: "Oswald", sans-serif;
   text-decoration: none;
   font-style: normal;
