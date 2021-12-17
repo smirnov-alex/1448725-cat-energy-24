@@ -1,15 +1,45 @@
 .page-header {
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
   margin: 10px 20px 18px;
 }
 
 .page-header__logo {
+  height: 38px;
+
   &:hover {
     opacity: 0.8;
   }
 
   &:active {
     opacity: 0.6;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .page-header {
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  .page-header__logo {
+    width: 174px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-header {
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0;
+    padding-left: 110px;
+    padding-right: 110px;
+  }
+
+  .page-header__logo {
+    width: 202px;
   }
 }
