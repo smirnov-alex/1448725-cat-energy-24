@@ -41,15 +41,9 @@
 }
 
 .programs__image {
-
-
   @media (min-width: $tablet-width) {
     grid-area: 1 / 2 / 3 / 3;
     margin: auto;
-  }
-
-  @media (min-width: $desktop-width) {
-
   }
 }
 
@@ -69,7 +63,7 @@
   @media (min-width: $tablet-width) {
     margin-left: 0;
     margin-top: 25px;
-    font-family: Oswald;
+    font-family: "Oswald", sans-serif;
     font-size: 36px;
     line-height: 36px;
   }
