@@ -2,6 +2,7 @@ $black: #000000;
 
 .main-nav {
   display: flex;
+  flex-direction: column;
 }
 
 .main-nav__toggle {
@@ -35,4 +36,36 @@ $black: #000000;
   font-size: 20px;
   line-height: 20px;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 24px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .main-nav__toggle {
+    display: none;
+  }
+
+  .main-nav__list {
+    flex-direction: row;
+    justify-content: space-between;
+    width: 440px;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .main-nav__toggle {
+    display: none;
+  }
+
+  .main-nav__list {
+    flex-direction: row;
+    justify-content: space-between;
+    width: 478px;
+    margin: 0 auto;
+  }
 }

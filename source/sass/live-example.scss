@@ -1,8 +1,21 @@
-$live-example-back: #eaeaea;
-
 .live-example {
   background-color: $live-example-back;
   padding-bottom: 40px;
+
+  @media (min-width: $tablet-width) {
+    margin-left: 30px;
+    margin-right: 30px;
+    background-color: $white;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 110px;
+    margin-right: 110px;
+    background-color: $white;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+  }
 }
 
 .live-example__title {
@@ -13,6 +26,11 @@ $live-example-back: #eaeaea;
   line-height: 40px;
   text-align: center;
   margin-bottom: 40px;
+
+  @media (min-width: $tablet-width) {
+    text-align: left;
+    margin-bottom: 63px;
+  }
 }
 
 .live-example__text {
@@ -21,6 +39,14 @@ $live-example-back: #eaeaea;
   margin: 0;
   padding: 0;
   margin-bottom: 20px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 54px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 450px;
+  }
 }
 
 .live-example__list {
@@ -28,6 +54,15 @@ $live-example-back: #eaeaea;
   padding: 0;
   margin-bottom: 20px;
   display: flex;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0;
+    margin-bottom: 35px;
+  }
 }
 
 .live-example__number {
@@ -52,6 +87,15 @@ $live-example-back: #eaeaea;
 
 .live-example__costs-wrapper {
   margin-bottom: 40px;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  @media (min-width: $desktop-width) {
+    flex-direction: column;
+  }
 }
 
 .live-example__costs {
@@ -63,15 +107,38 @@ $live-example-back: #eaeaea;
   text-align: center;
   text-transform: uppercase;
   color: $black;
+  margin: 0 auto;
+  display: block;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    text-align: left;
+  }
 }
 
 .compare-cats {
   display: flex;
   flex-direction: column;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 55px;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-area: 1 / 2 / 4 / 3;
+  }
 }
 
 .compare-cats__image {
   margin-bottom: 15px;
+
+  @media (min-width: $tablet-width) {
+    margin: 0 auto;
+    margin-bottom: 25px;
+  }
 }
 
 .compare-cats__text {
@@ -83,4 +150,13 @@ $live-example-back: #eaeaea;
   text-align: center;
   text-transform: uppercase;
   color: $black;
+}
+
+.compare-cats_toggle-wrapper {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: space-between;
+    margin-right: 58px;
+    margin-left: 58px;
+  }
 }
