@@ -24,6 +24,10 @@
   margin: 0 auto;
   margin-top: 39px;
   margin-bottom: 52px;
+
+  @media (min-width: $tablet-width) {
+    margin: 58px 0;
+  }
 }
 
 .social__list {
