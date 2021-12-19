@@ -1,3 +1,13 @@
+.page-catalog {
+  padding-left: 20px;
+  padding-right: 20px;
+
+  @media (min-width: $tablet-width) {
+    padding-right: 30px;
+    padding-left: 30px;
+  }
+}
+
 .catalog__title {
   font-family: "Oswald", sans-serif;
   font-style: normal;
@@ -9,16 +19,54 @@
   padding: 0;
   margin-top: 27px;
   margin-bottom: 49px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 60px;
+    line-height: 60px;
+    margin-bottom: 82px;
+  }
 }
 
 .catalog__list {
   margin: 0;
   padding: 0;
   list-style-type: none;
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+  }
+}
+
+.catalog__item {
+  @media (min-width: $tablet-width) {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+}
+
+.catalog__item-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  min-width: 280px;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 .catalog__item {
   margin-bottom: 33px;
+}
+
+.catalog__image {
+  margin: auto;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 28px;
+  }
 }
 
 .catalog__item-name {
@@ -32,6 +80,14 @@
   margin: 0;
   padding: 0;
   margin-bottom: 18px;
+  width: 80px;
+
+  @media (min-width: $tablet-width) {
+    width: 120px;
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 21px;
+  }
 }
 
 .catalog__description-list {
@@ -50,12 +106,23 @@
   color: $special-dark-grey;
 }
 
+.catalog__parameter {
+  float: left;
+  clear: left;
+  margin-right: 5px;
+}
+
+.catalog__value {
+  margin-left: 0px;
+  text-align: right;
+}
+
 .button__order {
   text-decoration: none;
   color: $white;
   background: $green-base;
   display: block;
-  width: 280px;
+  min-width: 240px;
   height: 40px;
   padding: 0;
   border: none;
@@ -81,9 +148,14 @@
   }
 }
 
+.catalog__button {
+  margin: 0 auto;
+}
+
 .catalog__add-info {
   margin-top: 3px;
   margin-bottom: 48px;
+  min-width: 280px;
 }
 
 .catalog__subtitle {
@@ -93,6 +165,7 @@
   font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;
+  text-align: center;
   color: $special-black;
   margin-top: 53px;
   margin-bottom: 8px;
@@ -102,6 +175,7 @@
   font-size: 12px;
   line-height: 16px;
   color: $special-dark-grey;
+  text-align: center;
   margin: 0;
   padding: 0;
   margin-bottom: 23px;
@@ -116,6 +190,7 @@
   padding: 0;
   border: none;
   cursor: pointer;
+  margin: 0 auto;
 
   &:hover,
   &:active {
@@ -137,4 +212,8 @@
     padding: 10px 44px;
     color: $special-dark-grey;
   }
+}
+
+.contacts--catalog {
+  background-color: $basic-grey;
 }

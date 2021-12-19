@@ -5,11 +5,18 @@
 
 .promotion__wrapper {
   background-color: $green-back;
+  min-width: 280px;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+  }
 }
 
 .promotion__image {
-  margin-top: 59px;
+  margin: 0 auto;
+  padding-top: 59px;
   margin-bottom: 48px;
+  display: block;
 }
 
 .promotion__text {
@@ -17,6 +24,13 @@
   margin: 0;
   padding: 0;
   padding-bottom: 43px;
+  padding-left: 58px;
+  padding-right: 58px;
   font-size: 16px;
   line-height: 20px;
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 71px;
+  }
 }
