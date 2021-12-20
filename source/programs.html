@@ -20,7 +20,8 @@
       <ul class="main-nav__list">
         <li class="main-nav__item"><a class="main-nav__link" href="index.html">Главная</a></li>
         <li class="main-nav__item"><a class="main-nav__link" href="catalog.html">Каталог продукции</a></li>
-        <li class="main-nav__item main-nav__item--active"><a class="main-nav__link" href="programs.html">Подбор программы</a></li>
+        <li class="main-nav__item main-nav__item--active"><a class="main-nav__link" href="programs.html">Подбор
+            программы</a></li>
       </ul>
     </nav>
   </header>
@@ -30,42 +31,66 @@
       <h2 class="programs-inner__title">Подбор программы</h2>
       <p class="programs-inner__text">Заполните анкету, и мы подберем программу питания для вашего кота</p>
       <form class="programs-inner__form" action="https://echo.htmlacademy.ru/" method="get">
-        <label class="programs-inner__form-label" for="name">Имя:*</label>
-        <input class="programs-inner__form-field" placeholder="Барсик" type="text" name="name" id="name" required>
-        <label class="programs-inner__form-label" for="weight">Вес(кг):*</label>
-        <input class="programs-inner__form-field" placeholder="7" type="number" name="weight" id="weight" required>
-        <label class="programs-inner__form-label" for="age">Возраст(лет):</label>
-        <input class="programs-inner__form-field" placeholder="7" type="number" name="age" id="age">
-        <ul class="programs-inner__list">
-          <li class="programs-inner__item">
-            <label class="programs-inner__item-label">
-              <input class="visually-hidden programs-inner__item-input" type="radio" name="program" value="slimming" checked>
-              <span class="programs-inner__item-text">Похудение</span>
-            </label>
-          </li>
-          <li class="programs-inner__item">
-            <label class="programs-inner__item-label">
-              <input class="visually-hidden programs-inner__item-input" type="radio" name="program" value="weight_gain">
-              <span class="programs-inner__item-text">Набор массы</span>
-            </label>
-          </li>
-          <li class="programs-inner__item">
-            <label class="programs-inner__item-label">
-              <input class="visually-hidden programs-inner__item-text-input" type="radio" name="program" value="advice">
-              <span class="programs-inner__item-text">Не знаю (Нужен ваш совет)</span>
-            </label>
-          </li>
-        </ul>
+        <div class="programs-inner__form--desktop-wrapper">
+          <div class="programs-inner__form--basic-fields-wrapper">
+            <div class="programs-inner__form-wrapper">
+              <label class="programs-inner__form-label" for="name">Имя:*</label>
+              <input class="programs-inner__form-field" placeholder="Барсик" type="text" name="name" id="name" required>
+            </div>
+            <div class="programs-inner__form-wrapper">
+              <label class="programs-inner__form-label" for="weight">Вес(кг):*</label>
+              <input class="programs-inner__form-field" placeholder="7" type="number" name="weight" id="weight"
+                required>
+            </div>
+            <div class="programs-inner__form-wrapper">
+              <label class="programs-inner__form-label" for="age">Возраст(лет):</label>
+              <input class="programs-inner__form-field" placeholder="7" type="number" name="age" id="age">
+            </div>
+          </div>
+          <ul class="programs-inner__list">
+            <li class="programs-inner__item">
+              <label class="programs-inner__item-label">
+                <input class="visually-hidden programs-inner__item-input" type="radio" name="program" value="slimming"
+                  checked>
+                <span class="programs-inner__item-text">Похудение</span>
+              </label>
+            </li>
+            <li class="programs-inner__item">
+              <label class="programs-inner__item-label">
+                <input class="visually-hidden programs-inner__item-input" type="radio" name="program"
+                  value="weight_gain">
+                <span class="programs-inner__item-text">Набор массы</span>
+              </label>
+            </li>
+            <li class="programs-inner__item">
+              <label class="programs-inner__item-label">
+                <input class="visually-hidden programs-inner__item-text-input" type="radio" name="program"
+                  value="advice">
+                <span class="programs-inner__item-text">Не знаю (Нужен ваш совет)</span>
+              </label>
+            </li>
+          </ul>
+        </div>
         <fieldset class="programs-inner__contacts">
-          <legend class="programs-inner__contacts-subtitle programs-inner__subtitle">Контактные данные (владельца кота)</legend>
-          <label class="programs-inner__form-label" for="email">E-mail:*</label>
-          <input class="programs-inner__form-field" placeholder="kuklachev@gmail.com" type="email" name="email" id="email" required>
-          <label class="programs-inner__form-label" for="phone">Телефон:*</label>
-          <input class="programs-inner__form-field" placeholder="8 (960) 900-60-90" type="tel" name="phone" id="phone">
+          <legend class="programs-inner__contacts-subtitle programs-inner__subtitle">Контактные данные (владельца кота)
+          </legend>
+          <div class="programs-inner__form--desktop-wrapper">
+            <div class="programs-inner__form-wrapper">
+              <label class="programs-inner__form-label" for="email">E-mail:*</label>
+              <input class="programs-inner__form-field" placeholder="kuklachev@gmail.com" type="email" name="email"
+                id="email" required>
+            </div>
+            <div class="programs-inner__form-wrapper">
+              <label class="programs-inner__form-label" for="phone">Телефон:*</label>
+              <input class="programs-inner__form-field" placeholder="8 (960) 900-60-90" type="tel" name="phone"
+                id="phone">
+            </div>
+          </div>
         </fieldset>
         <fieldset class="programs-inner__comment">
           <legend class="programs-inner__comment-subtitle programs-inner__subtitle">Комментарий</legend>
-          <textarea class="programs-inner__form-label" placeholder="Расскажите обо всех повАдках кота" name="comment" rows="7"></textarea>
+          <textarea class="programs-inner__form-textarea" placeholder="Расскажите обо всех повАдках кота" name="comment"
+            rows="7"></textarea>
         </fieldset>
         <fieldset class="programs-inner__add-info">
           <legend class="programs-inner__add-info-subtitle programs-inner__subtitle">Дополнительно</legend>
@@ -96,20 +121,21 @@
             </li>
           </ul>
         </fieldset>
-        <button class="programs-inner__form-submit button__order" type="submit"><span class="button__order--text">Отправить заявку</span></button>
+        <button class="programs-inner__form-submit button__order" type="submit"><span
+            class="button__order--text">Отправить заявку</span></button>
       </form>
       <p class="programs-inner__content-text">* — Обязательные поля</p>
     </section>
-    <section class="contacts">
-      <div class="contacts__wrapper">
-        <h2 class="visually-hidden">Контакты</h2>
-        <h3 class="contacts__subtitle">Приглашаем к сотрудничеству дилеров!</h3>
-          <address class="contacts__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</address>
-      </div>
-      <img class="contacts__map" src="img/contacts/location.png" alt="Карта с местоположением офиса" width="320"
-        height="362">
-    </section>
   </main>
+  <section class="contacts contacts--catalog">
+    <div class="contacts__wrapper">
+      <h2 class="visually-hidden">Контакты</h2>
+      <h3 class="contacts__subtitle">Приглашаем к сотрудничеству дилеров!</h3>
+      <address class="contacts__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</address>
+    </div>
+    <img class="contacts__map" src="img/contacts/location.png" alt="Карта с местоположением офиса" width="320"
+      height="362">
+  </section>
   <footer class="page-footer">
     <div class="page-footer__wrapper">
       <a class="page-footer__link" href="index.html">
