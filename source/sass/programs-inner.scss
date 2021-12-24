@@ -16,10 +16,10 @@
 
 .programs-inner__title {
   font-family: "Oswald", sans-serif;
-  font-style: normal;
-  font-weight: normal;
   font-size: 36px;
   line-height: 36px;
+  font-style: normal;
+  font-weight: normal;
   color: $black;
   margin: 0;
   padding: 0;
@@ -38,8 +38,6 @@
   padding: 0;
   margin-bottom: 39px;
   font-family: "Oswald", sans-serif;
-  font-style: normal;
-  font-weight: normal;
   line-height: 18px;
   text-transform: uppercase;
   color: $black;
@@ -60,7 +58,7 @@
   @media (min-width: $desktop-width) {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 80px;
+    grid-gap: 80px;
   }
 }
 
@@ -81,8 +79,6 @@
 
 .programs-inner__form-label {
   font-family: "Oswald", sans-serif;
-  font-style: normal;
-  font-weight: normal;
   font-size: 16px;
   line-height: 18px;
   text-transform: uppercase;
@@ -93,8 +89,6 @@
 
 .programs-inner__form-field {
   font-family: "Oswald", sans-serif;
-  font-style: normal;
-  font-weight: normal;
   font-size: 16px;
   line-height: 18px;
   text-transform: uppercase;
@@ -107,8 +101,6 @@
 
   &::-webkit-input-placeholder {
     font-family: "Oswald", sans-serif;
-    font-style: normal;
-    font-weight: normal;
     font-size: 16px;
     line-height: 18px;
     text-transform: uppercase;
@@ -139,8 +131,6 @@
 
 .programs-inner__item-text {
   font-family: "Oswald", sans-serif;
-  font-style: normal;
-  font-weight: normal;
   font-size: 16px;
   line-height: 18px;
   text-transform: uppercase;
@@ -155,8 +145,6 @@
 
 .programs-inner__subtitle {
   font-family: "Oswald", sans-serif;
-  font-style: normal;
-  font-weight: normal;
   font-size: 24px;
   line-height: 26px;
   color: $black;
@@ -169,8 +157,6 @@
 .programs-inner__form-textarea {
   width: 100%;
   font-family: "Oswald", sans-serif;
-  font-style: normal;
-  font-weight: normal;
   font-size: 16px;
   line-height: 18px;
   text-transform: uppercase;
@@ -206,8 +192,6 @@
 
 .programs-inner__add-info-text {
   font-family: "Oswald", sans-serif;
-  font-style: normal;
-  font-weight: normal;
   font-size: 16px;
   line-height: 18px;
   text-transform: uppercase;
