@@ -11,7 +11,6 @@
     margin: 0;
     padding-left: 110px;
     padding-right: 110px;
-    background-image: url("/source/img/promo/promo-background.png");
     background: linear-gradient(to right, $white 50%, $green-back 50%);
   }
 }
@@ -47,7 +46,6 @@
     width: 174px;
     margin-top: 24px;
     margin-bottom: 0;
-
   }
 
   @media (min-width: $desktop-width) {
