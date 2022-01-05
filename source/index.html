@@ -10,22 +10,21 @@
 
 <body class="page__body">
   <header class="page-header">
-    <a class="page-header__logo" href="index.html">
-      <img src="img/header/logo-mobile.svg" alt="Логотип Cat Energy" width="34" height="38">
-    </a>
-    <nav class="main-nav">
-      <button class="main-nav__toggle" type="button">
-        <span class="visually-hidden">Открыть меню</span>
-      </button>
-      <ul class="main-nav__list">
-        <li class="main-nav__item main-nav__item--active"><a class="main-nav__link" href="index.html">Главная</a></li>
-        <li class="main-nav__item"><a class="main-nav__link" href="catalog.html">Каталог продукции</a></li>
-        <li class="main-nav__item"><a class="main-nav__link" href="programs.html">Подбор программы</a></li>
-      </ul>
-    </nav>
-  </header>
-  <main class="page-main">
-    <h1 class="visually-hidden">Cat Energy - функциональное питание для котов</h1>
+    <div class="page-header__top-menu">
+      <a class="page-header__logo" href="index.html">
+        <img src="img/header/logo-mobile.svg" alt="Логотип Cat Energy" width="34" height="38">
+      </a>
+      <nav class="main-nav main-nav--closed main-nav--nojs">
+        <button class="main-nav__toggle" type="button">
+          <span class="visually-hidden">Открыть меню</span>
+        </button>
+        <ul class="main-nav__list">
+          <li class="main-nav__item"><a class="main-nav__link main-nav__link--active" href="index.html">Главная</a></li>
+          <li class="main-nav__item"><a class="main-nav__link" href="catalog.html">Каталог продукции</a></li>
+          <li class="main-nav__item"><a class="main-nav__link" href="programs.html">Подбор программы</a></li>
+        </ul>
+      </nav>
+    </div>
     <section class="promo">
       <div class="promo__wrapper">
         <h2 class="promo__title">Функциональное питание для котов</h2>
@@ -34,25 +33,44 @@
         <a class="promo__link" href="programs.html"><span class="promo__link--text">Подобрать программу</span></a>
       </div>
     </section>
+  </header>
+  <main class="page-main">
+    <h1 class="visually-hidden">Cat Energy - функциональное питание для котов</h1>
     <section class="programs">
       <div class="programs__wrapper">
         <h2 class="visually-hidden">Доступные программы питания</h2>
         <ul class="programs__list">
           <li class="programs__item programs__item--slim">
-            <img class="programs__image" src="img/programs/cat-slim.svg" alt="Программа похудения" width="36"
-              height="50">
+            <div class="programs__image--wrapper">
+              <img class="programs__image programs__image--slim" src="img/programs/cat-slim.svg"
+                alt="Программа похудения" width="36" height="50">
+            </div>
             <h3 class="programs__title">Похудение</h3>
             <p class="programs__description">Ваш кот весит больше собаки и почти утратил способность лазить по
               деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
-            <a class="programs__link" href="catalog.html">Каталог Slim</a>
+            <a class="programs__link" href="catalog.html">Каталог Slim
+              <svg class="programs__link--arrow" width="32" height="12" viewBox="0 0 32 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <line y1="6" x2="18" y2="6" stroke="black" stroke-width="2" />
+                <path d="M24 6L17.25 11.1962L17.25 0.803848L24 6Z" fill="black" />
+              </svg>
+            </a>
+
           </li>
           <li class="programs__item programs__item--pro">
-            <img class="programs__image" src="img/programs/cat-pro.svg" alt="Программа набора массы" width="67"
-              height="50">
+            <div class="programs__image--wrapper">
+              <img class="programs__image" src="img/programs/cat-pro.svg" alt="Программа набора массы" width="67"
+                height="50">
+            </div>
             <h3 class="programs__title">Набор массы</h3>
             <p class="programs__description">Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy
               Pro поможет вашему коту нарастить необходимые мышцы!</p>
-            <a class="programs__link" href="catalog.html">Каталог Pro</a>
+            <a class="programs__link" href="catalog.html">Каталог Pro
+              <svg class="programs__link--arrow" width="32" height="12" viewBox="0 0 32 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <line y1="6" x2="18" y2="6" stroke="black" stroke-width="2" />
+                <path d="M24 6L17.25 11.1962L17.25 0.803848L24 6Z" fill="black" />
+              </svg>
+            </a>
+
           </li>
         </ul>
       </div>
@@ -176,6 +194,22 @@
       </div>
     </div>
   </footer>
+  <script>
+    var navMain = document.querySelector('.main-nav');
+    var navToggle = document.querySelector('.main-nav__toggle');
+
+    navMain.classList.remove('main-nav--nojs');
+
+    navToggle.addEventListener('click', function () {
+      if (navMain.classList.contains('main-nav--closed')) {
+        navMain.classList.remove('main-nav--closed');
+        navMain.classList.add('main-nav--opened');
+      } else {
+        navMain.classList.add('main-nav--closed');
+        navMain.classList.remove('main-nav--opened');
+      }
+    });
+  </script>
 </body>
 
 </html>

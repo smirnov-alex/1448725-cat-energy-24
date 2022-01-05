@@ -1,10 +1,38 @@
 .page-header {
+  display: block;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0;
+    padding-left: 110px;
+    padding-right: 110px;
+    background-image: url("/source/img/promo/promo-background.png");
+    background: linear-gradient(to right, $white 50%, $green-back 50%);
+  }
+}
+
+.page-header__top-menu {
   display: flex;
   flex-direction: column;
-  margin: 10px 20px 18px;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 62px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 114px;
+  }
 }
 
 .page-header__logo {
+  margin: 10px 20px 18px;
   height: 38px;
 
   &:hover {
@@ -14,32 +42,16 @@
   &:active {
     opacity: 0.6;
   }
-}
 
-@media (min-width: $tablet-width) {
-  .page-header {
-    flex-direction: row;
-    justify-content: space-between;
-    margin: 0;
-    padding-left: 30px;
-    padding-right: 30px;
-  }
-
-  .page-header__logo {
+  @media (min-width: $tablet-width) {
     width: 174px;
-  }
-}
+    margin-top: 24px;
+    margin-bottom: 0;
 
-@media (min-width: $desktop-width) {
-  .page-header {
-    flex-direction: row;
-    justify-content: space-between;
-    margin: 0;
-    padding-left: 110px;
-    padding-right: 110px;
   }
 
-  .page-header__logo {
+  @media (min-width: $desktop-width) {
     width: 202px;
+    margin-top: 53px;
   }
 }
