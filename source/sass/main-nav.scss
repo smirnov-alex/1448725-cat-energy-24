@@ -145,6 +145,14 @@
     line-height: 30px;
     padding-bottom: 8px;
     color: $white;
+
+    &:hover {
+      color: fade-out($white, 0.4);
+    }
+
+    &:active {
+      color: fade-out($white, 0.7);
+    }
   }
 }
 

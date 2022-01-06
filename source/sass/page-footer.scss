@@ -24,30 +24,88 @@
   margin: 0 auto;
   margin-top: 39px;
   margin-bottom: 52px;
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 280px;
+    height: 2px;
+    background-color: $programs-border;
+    top: 57px;
+    right: -76px;
+  }
 
   @media (min-width: $tablet-width) {
     margin: 58px 0;
+
+    &::after {
+      display: none;
+    }
+  }
+}
+
+.page-footer__logo {
+  fill: $special-black;
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
   }
 }
 
 .social__list {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   list-style-type: none;
-  margin: 0;
+  margin: 0 93px;
   padding: 0;
   margin-bottom: 43px;
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 280px;
+    height: 2px;
+    background-color: $programs-border;
+    top: 42px;
+    right: -76px;
+  }
 
   @media (min-width: $tablet-width) {
     margin: 0;
     align-self: center;
+    min-width: 130px;
+
+    &::after {
+      display: none;
+    }
   }
 }
 
-.page-footer__copyright {
+.social__link svg {
+  fill: $social-links;
+
+  &:hover {
+    fill: $green-base;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.page-footer__copyright-link {
+  text-decoration: none;
   display: flex;
   justify-content: space-between;
   margin-bottom: 22px;
+  margin-right: 20px;
+  margin-left: 20px;
 
   @media (min-width: $tablet-width) {
     margin: 0;
@@ -62,4 +120,25 @@
   font-size: 16px;
   line-height: 18px;
   color: $special-dark-grey;
+  margin-top: 9px;
+
+  &:active {
+    opacity: 0.3;
+  }
+
+  @media (min-width: $tablet-width) {
+    margin-right: 22px;
+  }
+}
+
+.page-footer__copyright-link svg {
+  fill: $social-links;
+
+  &:hover {
+    fill: $green-base;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
