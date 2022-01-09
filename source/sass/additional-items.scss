@@ -14,12 +14,40 @@
   font-size: 24px;
   line-height: 24px;
   color: $black;
-  margin-bottom: 49px;
+  margin-left: 20px;
+  margin-bottom: 36px;
+  position: relative;
+
+  &::after {
+    content: "";
+    width: 53px;
+    height: 2px;
+    background-color: $green-base;
+    position: absolute;
+    right: 0;
+    bottom: 7px;
+  }
 
   @media (min-width: $tablet-width) {
     font-size: 36px;
     line-height: 36px;
-    padding-left: 38px;
+    margin-left: 0;
+    padding-left: 67px;
+    margin-bottom: 80px;
+
+    &::before {
+      content: "";
+      width: 30px;
+      height: 2px;
+      background-color: $green-base;
+      position: absolute;
+      left: 0;
+      bottom: 7px;
+    }
+
+    &::after {
+      width: 328px;
+    }
   }
 
   @media (min-width: $desktop-width) {
@@ -29,19 +57,41 @@
 
 .additional-items__list {
   margin: 0;
+  margin-left: 20px;
+  margin-right: 20px;
   padding: 0;
   list-style-type: none;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 69px;
+    margin-left: 30px;
+    margin-right: 30px;
+    border: 1px solid $toggle-border;
+    box-sizing: border-box;
+  }
 }
 
 .additional-items__item {
-  margin-bottom: 31px;
   display: flex;
   flex-direction: column;
+  padding-top: 12px;
+  padding-bottom: 19px;
+  border-bottom: 1px solid $toggle-border;
+
+  &:first-child {
+    border-top: 1px solid $toggle-border;
+  }
 
   @media (min-width: $tablet-width) {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    padding: 0 38px;
+    padding: 26px 38px 28px;
+  }
+  &:first-child {
+    border-top: none;
+  }
+  &:last-child {
+    border-bottom: none;
   }
 }
 
@@ -67,6 +117,11 @@
   display: flex;
   justify-content: space-between;
   width: 280px; /* для лучшего восприятия на данный момент */
+
+  @media (min-width: $tablet-width) {
+    width: auto;
+    justify-content: end;
+  }
 }
 
 .additional-items__amount,
@@ -76,6 +131,12 @@
   @media (min-width: $tablet-width) {
     font-size: 16px;
     line-height: 20px;
+  }
+}
+
+.additional-items__price {
+  @media (min-width: $tablet-width) {
+    margin-left: 49px;
   }
 }
 

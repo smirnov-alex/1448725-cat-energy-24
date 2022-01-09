@@ -6,12 +6,18 @@
 .promotion__wrapper {
   background-color: $green-back;
   min-width: 280px;
+  margin-right: 20px;
+  margin-left: 20px;
 
   @media (min-width: $tablet-width) {
     display: flex;
+    margin-right: 30px;
+    margin-left: 30px;
+    margin-bottom: 76px;
+    height: 200px;
   }
 
-  @media (min-width: $tablet-width) {
+  @media (min-width: $desktop-width) {
     display: block;
   }
 }
@@ -21,6 +27,11 @@
   padding-top: 59px;
   margin-bottom: 48px;
   display: block;
+
+  @media (min-width: $tablet-width) {
+    margin-left: 77px;
+    margin-right: 265px;
+  }
 }
 
 .promotion__text {
@@ -36,5 +47,8 @@
 
   @media (min-width: $tablet-width) {
     padding-top: 71px;
+    width: 160px;
+    padding-left: 0;
+    text-align: left;
   }
 }
