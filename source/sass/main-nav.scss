@@ -164,6 +164,10 @@
   .main-nav__link--active {
     border-bottom: 2px solid $green-base;
   }
+
+  .main-nav__link--inner-active {
+    border-bottom: 2px solid $green-base;
+  }
 }
 
 @media (min-width: $desktop-width) {
@@ -184,6 +188,10 @@
 
     &:active {
       color: fade-out($special-black, 0.7);
+    }
+
+    &-active {
+      border-bottom: 2px solid $green-base;
     }
   }
 }
