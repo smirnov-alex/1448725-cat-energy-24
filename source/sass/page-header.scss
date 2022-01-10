@@ -12,6 +12,10 @@
     padding-left: 110px;
     padding-right: 110px;
     background: linear-gradient(to right, $white 50%, $green-back 50%);
+
+    &--inner {
+      background: $white;
+    }
   }
 }
 
@@ -26,7 +30,11 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 114px;
+    margin-bottom: 78px;
+
+    &--inner {
+      background-color: $white;
+    }
   }
 }
 

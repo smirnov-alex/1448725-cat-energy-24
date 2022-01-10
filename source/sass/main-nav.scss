@@ -174,4 +174,16 @@
   .main-nav__link--active {
     border-bottom: 2px solid $white;
   }
+
+  .main-nav__link--inner {
+    color: $special-black;
+
+    &:hover {
+      color: fade-out($special-black, 0.4);
+    }
+
+    &:active {
+      color: fade-out($special-black, 0.7);
+    }
+  }
 }
