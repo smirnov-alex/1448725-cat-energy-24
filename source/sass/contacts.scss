@@ -29,10 +29,9 @@
     position: absolute;
     background-color: $white;
     padding: 56px 80px;
-    /* временно выставлю границы и позиционирование */
-    top: 20px;
-    left: 20px;
-    outline: 1px solid $green-base;
+    top: 95px;
+    left: 110px;
+    margin-bottom: 0;
   }
 }
 
@@ -67,9 +66,15 @@
     font-size: 16px;
     margin-left: 150px;
   }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 44px;
+    width: 155px;
+  }
 }
 
 .contacts__map {
   display: block;
   border: none;
+  width: 100%;
 }

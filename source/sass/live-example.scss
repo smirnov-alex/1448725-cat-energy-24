@@ -169,6 +169,7 @@
   @media (min-width: $tablet-width) {
     padding-bottom: 55px;
     background: linear-gradient(to bottom, $white 30%, $live-example-back 30%, $live-example-back 70%);
+    margin: 0;
   }
 
   @media (min-width: $desktop-width) {
@@ -264,9 +265,11 @@
     border-radius: 50%;
     background-color: $white;
     left: 167px;
-    top: -24px;
+    top: -17px;
     color: $green-base;
     padding: 0;
+    margin: 0;
+    cursor: pointer;
 
     &::before {
       content: "";
@@ -274,8 +277,19 @@
       box-sizing: border-box;
       border-radius: 50%;
       background-color: $green-base;
-      width: 13px;
-      height: 13px;
+      width: 8px;
+      height: 8px;
+      margin-left: 12px;
+      display: block;
+    }
+
+    &:hover {
+      filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.19));
+    }
+
+    &:active {
+      filter: drop-shadow(0 3px 5px rgba(0, 0, 0, 0.2));
+      border-color: $green-base;
     }
   }
 }

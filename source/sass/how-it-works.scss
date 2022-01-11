@@ -43,6 +43,8 @@
     grid-template-columns: 1fr 1fr;
     gap: 37px;
     list-style-type: decimal;
+    counter-reset: myCounter;
+    position: relative;
   }
 
   @media (min-width: $desktop-width) {
@@ -62,56 +64,26 @@
   @media (min-width: $tablet-width) {
     flex-direction: column;
     width: 240px;
-  }
-}
 
-@media (min-width: $tablet-width) {
-  .how-it-works__item--healthy::after {
-    content: "1";
-    position: absolute;
-    color: $basic-grey;
-    font-family: "Oswald", sans-serif;
-    font-size: 230px;
-    line-height: 280px;
-    z-index: -1;
-    right: 12px;
-    top: -17px;
-  }
-
-  .how-it-works__item--easy::after {
-    content: "2";
-    position: absolute;
-    color: $basic-grey;
-    font-family: "Oswald", sans-serif;
-    font-size: 230px;
-    line-height: 280px;
-    z-index: -1;
-    right: 12px;
-    top: -17px;
+    &::before {
+      counter-increment: myCounter;
+      content: counter(myCounter);
+      color: $basic-grey;
+      font-family: "Oswald", sans-serif;
+      font-size: 230px;
+      line-height: 280px;
+      margin-left: 100px;
+      margin-top: 40px;
+      z-index: -1;
+      position: absolute;
+    }
   }
 
-  .how-it-works__item--food::after {
-    content: "3";
-    position: absolute;
-    color: $basic-grey;
-    font-family: "Oswald", sans-serif;
-    font-size: 230px;
-    line-height: 280px;
-    z-index: -1;
-    right: 12px;
-    top: -17px;
-  }
-
-  .how-it-works__item--time::after {
-    content: "4";
-    position: absolute;
-    color: $basic-grey;
-    font-family: "Oswald", sans-serif;
-    font-size: 230px;
-    line-height: 280px;
-    z-index: -1;
-    right: 12px;
-    top: -17px;
+  @media (min-width: $desktop-width) {
+    &::before {
+      font-size: 280px;
+      margin-top: 75px;
+    }
   }
 }
 
