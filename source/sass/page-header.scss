@@ -1,10 +1,45 @@
 .page-header {
+  display: block;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0;
+    padding-left: 110px;
+    padding-right: 110px;
+    background: linear-gradient(to right, $white 50%, $green-back 50%);
+
+    &--inner {
+      background: $white;
+    }
+  }
+}
+
+.page-header__top-menu {
   display: flex;
   flex-direction: column;
-  margin: 10px 20px 18px;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 62px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 78px;
+
+    &--inner {
+      background-color: $white;
+    }
+  }
 }
 
 .page-header__logo {
+  margin: 10px 70px 18px 20px;
   height: 38px;
 
   &:hover {
@@ -14,32 +49,15 @@
   &:active {
     opacity: 0.6;
   }
-}
 
-@media (min-width: $tablet-width) {
-  .page-header {
-    flex-direction: row;
-    justify-content: space-between;
-    margin: 0;
-    padding-left: 30px;
-    padding-right: 30px;
-  }
-
-  .page-header__logo {
+  @media (min-width: $tablet-width) {
     width: 174px;
-  }
-}
-
-@media (min-width: $desktop-width) {
-  .page-header {
-    flex-direction: row;
-    justify-content: space-between;
-    margin: 0;
-    padding-left: 110px;
-    padding-right: 110px;
+    margin-top: 24px;
+    margin-bottom: 0;
   }
 
-  .page-header__logo {
+  @media (min-width: $desktop-width) {
     width: 202px;
+    margin-top: 53px;
   }
 }

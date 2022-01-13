@@ -3,6 +3,11 @@
   position: relative;
   min-width: 280px;
 
+  &--catalog {
+    background-color: $basic-grey;
+    padding-top: 26px;
+  }
+
   @media (min-width: $tablet-width) {
     margin-top: 0;
   }
@@ -17,17 +22,16 @@
   padding-right: 20px;
 
   @media (min-width: $tablet-width) {
-    padding: 56px 70px;
+    padding: 60px 70px 55px;
   }
 
   @media (min-width: $desktop-width) {
     position: absolute;
     background-color: $white;
     padding: 56px 80px;
-    /* временно выставлю границы и позиционирование */
-    top: 20px;
-    left: 20px;
-    outline: 1px solid $green-base;
+    top: 95px;
+    left: 110px;
+    margin-bottom: 0;
   }
 }
 
@@ -44,6 +48,8 @@
   @media (min-width: $tablet-width) {
     width: 175px;
     text-align: left;
+    font-size: 20px;
+    line-height: 26px;
   }
 }
 
@@ -57,9 +63,18 @@
 
   @media (min-width: $tablet-width) {
     text-align: right;
+    font-size: 16px;
+    margin-left: 150px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 44px;
+    width: 155px;
   }
 }
 
 .contacts__map {
   display: block;
+  border: none;
+  width: 100%;
 }
