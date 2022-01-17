@@ -11,9 +11,20 @@
 <body class="page__body">
   <header class="page-header page-header--inner">
     <div class="page-header__top-menu page-header__top-menu--inner">
-      <a class="page-header__logo" href="index.html">
-        <img src="img/header/logo-mobile.svg" alt="Логотип Cat Energy" width="34" height="38">
-      </a>
+      <div class="page-header__top-menu-wrapper">
+        <a class="page-header__logo" href="index.html">
+          <picture>
+            <source media="(min-width: 1440px)" srcset="img/header/logo-desktop.svg">
+            <source media="(min-width: 768px)" srcset="img/header/logo-tablet.svg">
+            <img class="page-header__logo--image" src="img/header/logo-mobile.svg" alt="Логотип Cat Energy" width="34"
+              height="38">
+          </picture>
+        </a>
+        <a class="page-header__logo--text" href="index.html">
+          <img class="page-header__logo--image" src="img/header/logo-text.svg" alt="Логотип Cat Energy" width="101"
+            height="18">
+        </a>
+      </div>
       <nav class="main-nav main-nav--closed main-nav--nojs">
         <button class="main-nav__toggle" type="button">
           <span class="visually-hidden">Открыть меню</span>
