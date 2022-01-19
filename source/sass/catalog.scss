@@ -104,13 +104,30 @@
 
 .catalog__image {
   margin: auto;
+  margin-top: 27px;
+  display: block;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 28px;
+    width: 161px;
+    height: auto;
+    margin-top: 44px;
+    margin-bottom: 27px;
+
+    &--big {
+      width: 168px;
+      height: auto;
+      margin-top: 8px;
+      margin-bottom: 31px;
+    }
   }
 
   @media (min-width: $desktop-width) {
     margin-bottom: 42px;
+
+    &--big {
+      margin-top: 18px;
+      margin-bottom: 34px;
+    }
   }
 }
 
