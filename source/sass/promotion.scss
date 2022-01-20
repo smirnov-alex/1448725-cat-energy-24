@@ -4,10 +4,21 @@
 }
 
 .promotion__wrapper {
-  background-color: $green-back;
+  background: linear-gradient(to bottom, $green-back 63%, $green-back 37%),
+    url("../img/additional-items/promotion-phone.png");
+  background-repeat: no-repeat;
+  background-position-x: center;
   min-width: 280px;
   margin-right: 20px;
   margin-left: 20px;
+
+  @media (min-resolution: 2dppx) {
+    background: linear-gradient(to bottom, $green-back 63%, $green-back 37%),
+      url("../img/additional-items/promotion-phone@2x.png");
+    background-size: 280px auto;
+    background-repeat: no-repeat;
+    background-position-x: center;
+  }
 
   @media (min-width: $tablet-width) {
     display: flex;
@@ -15,12 +26,37 @@
     margin-left: 30px;
     margin-bottom: 76px;
     height: 200px;
+    background: linear-gradient(to bottom, $green-back 63%, $green-back 37%),
+      url("../img/additional-items/promotion-tablet.png");
+    background-repeat: no-repeat;
+    background-position-x: center;
+
+    @media (min-resolution: 2dppx) {
+      background: linear-gradient(to bottom, $green-back 63%, $green-back 37%),
+        url("../img/additional-items/promotion-tablet@2x.png");
+      background-size: 707px auto;
+      background-repeat: no-repeat;
+      background-position-x: center;
+    }
   }
 
   @media (min-width: $desktop-width) {
     display: block;
     height: auto;
     margin-bottom: 0;
+    background: linear-gradient(to bottom, $green-back 63%, $green-back 37%),
+      url("../img/additional-items/promotion-desktop.png");
+    background-repeat: no-repeat;
+    background-size: 245px auto;
+    background-position-x: center;
+
+    @media (min-resolution: 2dppx) {
+      background: linear-gradient(to bottom, $green-back 63%, $green-back 37%),
+        url("../img/additional-items/promotion-desktop@2x.png");
+      background-size: 245px auto;
+      background-repeat: no-repeat;
+      background-position-x: center;
+    }
   }
 }
 
