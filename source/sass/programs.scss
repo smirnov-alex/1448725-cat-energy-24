@@ -177,6 +177,10 @@
     fill: $black;
   }
 
+  &:hover svg {
+    width: 32px;
+  }
+
   &:active {
     opacity: 0.3;
   }
