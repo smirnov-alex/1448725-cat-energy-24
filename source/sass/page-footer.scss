@@ -23,7 +23,7 @@
 .page-footer__link {
   margin: 0 auto;
   margin-top: 39px;
-  margin-bottom: 32px;
+  margin-bottom: 29px;
   position: relative;
 
   @media (min-width: $tablet-width) {
@@ -48,13 +48,13 @@
   justify-content: center;
   list-style-type: none;
   margin: 0 20px;
-  margin-bottom: 23px;
+  margin-bottom: 20px;
   position: relative;
   border-top: 2px solid $programs-border;
   border-bottom: 2px solid $programs-border;
   padding: 0;
   padding-top: 20px;
-  padding-bottom: 21px;
+  padding-bottom: 17px;
 
   @media (min-width: $tablet-width) {
     margin: 0;
@@ -97,6 +97,11 @@
   @media (min-width: $tablet-width) {
     margin: 0;
     align-self: center;
+    margin-top: 44px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 82px;
   }
 }
 
@@ -107,7 +112,7 @@
   font-size: 16px;
   line-height: 18px;
   color: $special-dark-grey;
-  margin-top: 9px;
+  margin-top: 5px;
 
   &:active {
     opacity: 0.3;
