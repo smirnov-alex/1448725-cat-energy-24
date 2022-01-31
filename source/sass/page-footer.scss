@@ -97,11 +97,19 @@
   @media (min-width: $tablet-width) {
     margin: 0;
     align-self: center;
-    margin-top: 44px;
+    margin-top: -52px;
+
+    &--inner {
+      margin-top: 4px;
+    }
   }
 
   @media (min-width: $desktop-width) {
-    margin-top: 82px;
+    margin-top: -7px;
+
+    &--inner {
+      margin-top: -5px;
+    }
   }
 }
 

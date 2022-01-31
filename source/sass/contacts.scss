@@ -27,6 +27,11 @@
 
   @media (min-width: $tablet-width) {
     padding: 62px 70px 55px;
+
+    &--inner {
+      padding-top: 30px;
+      padding-bottom: 30px;
+    }
   }
 
   @media (min-width: $desktop-width) {
@@ -93,4 +98,8 @@
   display: block;
   border: none;
   width: 100%;
+
+  @media (min-width: $tablet-width) {
+    height: 410px;
+  }
 }
