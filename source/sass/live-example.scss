@@ -108,6 +108,7 @@
   border: 1px solid $toggle-border;
   box-sizing: border-box;
   border-radius: 3px;
+  text-transform: uppercase;
 
   @media (min-width: $tablet-width) {
     font-size: 30px;
