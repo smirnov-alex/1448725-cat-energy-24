@@ -6,12 +6,13 @@
   @media (min-width: $tablet-width) {
     margin-left: 30px;
     margin-right: 30px;
-    margin-bottom: 90px;
+    margin-bottom: 125px;
   }
 
   @media (min-width: $desktop-width) {
     margin-left: 110px;
     margin-right: 110px;
+    margin-bottom: 63px;
   }
 }
 
@@ -30,6 +31,11 @@
     text-align: left;
     font-size: 60px;
     line-height: 60px;
+    margin-bottom: 33px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 33px;
   }
 }
 
@@ -41,7 +47,7 @@
   @media (min-width: $tablet-width) {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 37px;
+    gap: 57px;
     list-style-type: decimal;
     counter-reset: myCounter;
     position: relative;
@@ -50,7 +56,7 @@
   @media (min-width: $desktop-width) {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    gap: 80px;
+    gap: 77px;
   }
 }
 
@@ -70,19 +76,32 @@
       content: counter(myCounter);
       color: $basic-grey;
       font-family: "Oswald", sans-serif;
-      font-size: 230px;
+      font-size: 280px;
       line-height: 280px;
       margin-left: 100px;
-      margin-top: 40px;
+      margin-top: 54px;
       z-index: -1;
       position: absolute;
+    }
+
+    &--food,
+    &--time {
+      margin-top: 18px;
     }
   }
 
   @media (min-width: $desktop-width) {
+    min-width: 240px;
+
     &::before {
       font-size: 280px;
-      margin-top: 75px;
+      margin-top: 56px;
+      margin-left: 110px;
+    }
+
+    &--food,
+    &--time {
+      margin-top: 0;
     }
   }
 }
@@ -101,6 +120,10 @@
   line-height: 18px;
   color: $special-dark-grey;
   margin-left: 20px;
+
+  br {
+    display: none;
+  }
 
   @media (min-width: $tablet-width) {
     margin: 0;
