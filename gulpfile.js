@@ -10,6 +10,8 @@ import squoosh from 'gulp-libsquoosh';
 import svgo from 'gulp-svgmin';
 import del from 'del';
 import browser from 'browser-sync';
+import terser from 'gulp-terser';
+import svgstore from 'gulp-svgstore';
 
 // Styles
 
@@ -18,7 +20,8 @@ export const styles = () => {
     .pipe(plumber())
     .pipe(sass().on('error', sass.logError))
     .pipe(postcss([
-      autoprefixer()
+      autoprefixer(),
+      csso()
     ]))
     .pipe(rename('style.min.css'))
     .pipe(gulp.dest('build/css', { sourcemaps: '.' }))
@@ -31,6 +34,15 @@ const html = () => {
   return gulp.src('source/*.html')
     .pipe(htmlmin({ collapseWhitespace: true }))
     .pipe(gulp.dest('build'));
+}
+
+// Scripts
+const scripts = () => {
+  return gulp.src('source/js/script.js')
+    .pipe(terser())
+    .pipe(rename("script.min.js"))
+    .pipe(gulp.dest('build/js'))
+    .pipe(browser.stream());
 }
 
 // Images
@@ -62,6 +74,16 @@ const svg = () =>
   gulp.src('source/img/**/*.svg')
     .pipe(svgo())
     .pipe(gulp.dest('build/img'));
+
+const sprite = () => {
+  return gulp.src('source/img/footer/*.svg')
+  .pipe(svgo())
+  .pipe(svgstore({
+    inlineSvg: true
+  }))
+  .pipe(rename('sprite.svg'))
+  .pipe(gulp.dest('build/img'));
+}
 
 // Copy
 
@@ -118,7 +140,9 @@ export const build = gulp.series(
   gulp.parallel(
     styles,
     html,
+    scripts,
     svg,
+    sprite,
     createWebp
   ),
 );
@@ -132,7 +156,9 @@ export default gulp.series(
   gulp.parallel(
     styles,
     html,
+    scripts,
     svg,
+    sprite,
     createWebp
   ),
   gulp.series(
