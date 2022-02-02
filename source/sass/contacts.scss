@@ -27,10 +27,11 @@
 
   @media (min-width: $tablet-width) {
     padding: 62px 70px 55px;
+    margin-bottom: 0;
 
     &--inner {
       padding-top: 30px;
-      padding-bottom: 30px;
+      padding-bottom: 60px;
     }
   }
 

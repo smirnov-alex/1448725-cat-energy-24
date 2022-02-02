@@ -66,9 +66,10 @@
   }
 
   @media (min-width: $tablet-width) {
-    width: 174px;
-    margin-top: 18px;
+    width: 183px;
+    margin-top: 22px;
     margin-bottom: 0;
+    margin-left: 2px;
   }
 
   @media (min-width: $desktop-width) {
@@ -78,8 +79,8 @@
 
   &--image {
     @media (min-width: $tablet-width) {
-      width: 154px;
-      height: 72px;
+      width: 171px;
+      height: 56px;
     }
 
     @media (min-width: $desktop-width) {

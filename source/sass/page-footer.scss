@@ -27,7 +27,7 @@
   position: relative;
 
   @media (min-width: $tablet-width) {
-    margin: 58px 0;
+    margin: 54px 0;
   }
 }
 
@@ -45,7 +45,6 @@
 
 .social__list {
   display: flex;
-  justify-content: center;
   list-style-type: none;
   margin: 0 20px;
   margin-bottom: 20px;
@@ -55,12 +54,15 @@
   padding: 0;
   padding-top: 20px;
   padding-bottom: 17px;
+  padding-left: 74px;
 
   @media (min-width: $tablet-width) {
     margin: 0;
     align-self: center;
     min-width: 130px;
     border: none;
+    padding-left: 27px;
+    padding-top: 12px;
   }
 }
 
@@ -68,8 +70,8 @@
   &:not(:last-child) {
     margin-right: 35px;
 
-    @media (max-width: $tablet-width) {
-      margin-right: 25px;
+    @media (min-width: $tablet-width) {
+      margin-right: 26px;
     }
   }
 }
@@ -86,6 +88,27 @@
   }
 }
 
+.social__link--vkontakte {
+  @media (min-width: $tablet-width) {
+    width: 28px;
+    height: 28px;
+  }
+}
+
+.social__link--instagram {
+  @media (min-width: $tablet-width) {
+    width: 23px;
+    height: 34px;
+  }
+}
+
+.social__link--facebook {
+  @media (min-width: $tablet-width) {
+    width: 28px;
+    height: 33px;
+  }
+}
+
 .page-footer__copyright-link {
   text-decoration: none;
   display: flex;
@@ -97,7 +120,7 @@
   @media (min-width: $tablet-width) {
     margin: 0;
     align-self: center;
-    margin-top: -52px;
+    margin-top: -3px;
 
     &--inner {
       margin-top: 4px;
@@ -128,6 +151,10 @@
 
   @media (min-width: $tablet-width) {
     margin-right: 22px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 10px;
   }
 }
 
