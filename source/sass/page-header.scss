@@ -1,5 +1,6 @@
 .page-header {
   display: block;
+  position: relative;
 
   @media (min-width: $tablet-width) {
     margin: 0;
@@ -11,22 +12,23 @@
     margin: 0;
     padding-left: 110px;
     padding-right: 110px;
-    background: linear-gradient(to right, $white 50%, $green-back 50%),
-      url("../img/header/index-background-desktop.png");
-    background-repeat: no-repeat;
-    background-position-x: right;
-
-    @media (min-resolution: 2dppx) {
-      background: linear-gradient(to right, $white 50%, $green-back 50%),
-        url("../img/header/index-background-desktop@2x.png");
-      background-size: 1440px auto;
-      background-repeat: no-repeat;
-      background-position-x: right;
-    }
+    background: linear-gradient(to right, $white 50%, $green-back 50%);
 
     &--inner {
       background: $white;
     }
+  }
+}
+
+.page-header__back-image {
+  display: none;
+
+  @media (min-width: $desktop-width) {
+    display: block;
+    position: absolute;
+    right: 1px;
+    z-index: -1;
+    width: 50%;
   }
 }
 
