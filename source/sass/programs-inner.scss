@@ -69,7 +69,7 @@
   }
 }
 
-.programs-inner__form--desktop-wrapper {
+.programs-inner__form-desktop-wrapper {
   @media (min-width: $desktop-width) {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -78,7 +78,7 @@
   }
 }
 
-.programs-inner__form--basic-fields-wrapper {
+.programs-inner__form-basic-fields-wrapper {
   padding-left: 20px;
   padding-right: 20px;
   padding-bottom: 24px;
@@ -112,7 +112,7 @@
   }
 }
 
-.programs-inner__form-wrapper--contacts {
+.programs-inner__form-wrapper-contacts {
   display: flex;
   margin-bottom: 13px;
   position: relative;
@@ -142,7 +142,7 @@
   }
 }
 
-.programs-inner__form-wrapper--contacts-phone::before {
+.programs-inner__form-wrapper-contacts-phone::before {
   height: 21px;
   background-image: url("../img/programs-inner/phone.svg");
 }
@@ -285,7 +285,8 @@
   border-color: $radiobutton-hover;
 }
 
-.programs-inner__item-input:disabled + .programs-inner__item-mark + .programs-inner__item-text {
+.programs-inner__item-input:disabled + .programs-inner__item-mark,
+.programs-inner__item-input:disabled + .programs-inner__item-text {
   opacity: 0.3;
 }
 
@@ -488,6 +489,8 @@
 
   @media (min-width: $tablet-width) {
     padding: 10px 0 0 19px;
+    font-size: 20px;
+    line-height: 30px;
   }
 }
 
@@ -609,7 +612,8 @@
   border-color: $radiobutton-hover;
 }
 
-.programs-inner__add-info-input:disabled + .programs-inner__add-info-mark + .programs-inner__add-info-text {
+.programs-inner__add-info-input:disabled + .programs-inner__add-info-mark,
+.programs-inner__add-info-input:disabled + .programs-inner__add-info-text {
   opacity: 0.3;
 }
 

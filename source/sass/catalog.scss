@@ -211,17 +211,17 @@
   &:active span {
     opacity: 0.3;
   }
+}
 
-  &--text {
-    display: block;
-    font-family: "Oswald", sans-serif;
-    font-weight: normal;
-    font-size: 16px;
-    line-height: 20px;
-    text-align: center;
-    text-transform: uppercase;
-    padding: 10px 44px;
-  }
+.button__order-text {
+  display: block;
+  font-family: "Oswald", sans-serif;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  text-transform: uppercase;
+  padding: 10px 44px;
 }
 
 .catalog__button {
@@ -338,20 +338,20 @@
   &:active span {
     opacity: 0.3;
   }
+}
 
-  &--text {
-    display: block;
-    font-family: "Oswald", sans-serif;
-    font-weight: normal;
-    font-size: 16px;
-    line-height: 20px;
-    text-align: center;
-    text-transform: uppercase;
-    padding: 10px 44px;
-    color: $special-dark-grey;
+.catalog__show-more-button-text {
+  display: block;
+  font-family: "Oswald", sans-serif;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  text-transform: uppercase;
+  padding: 10px 44px;
+  color: $special-dark-grey;
 
-    @media (min-width: $desktop-width) {
-      padding: 12px 39px;
-    }
+  @media (min-width: $desktop-width) {
+    padding: 12px 39px;
   }
 }

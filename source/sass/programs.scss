@@ -46,7 +46,7 @@
   }
 }
 
-.programs__image--wrapper {
+.programs__image-wrapper {
   height: 50px;
   width: 50px;
   background-color: $green-base;
@@ -179,11 +179,6 @@
   color: $black;
   grid-area: 3 / 1 / 4 / 3;
 
-  &--arrow {
-    margin-left: 11px;
-    fill: $black;
-  }
-
   &:hover svg {
     width: 32px;
   }
@@ -196,10 +191,15 @@
     font-size: 20px;
     line-height: 30px;
     margin-top: 9px;
+  }
+}
 
-    &--arrow {
-      margin-left: 21px;
-      fill: $black;
-    }
+.programs__link-arrow {
+  margin-left: 11px;
+  fill: $black;
+
+  @media (min-width: $tablet-width) {
+    margin-left: 21px;
+    fill: $black;
   }
 }

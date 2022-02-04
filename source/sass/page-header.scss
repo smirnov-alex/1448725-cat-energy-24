@@ -78,21 +78,21 @@
     width: 202px;
     margin-top: 53px;
   }
+}
 
-  &--image {
-    @media (min-width: $tablet-width) {
-      width: 171px;
-      height: 56px;
-    }
+.page-header__logo-image {
+  @media (min-width: $tablet-width) {
+    width: 171px;
+    height: 56px;
+  }
 
-    @media (min-width: $desktop-width) {
-      width: 202px;
-      height: 59px;
-    }
+  @media (min-width: $desktop-width) {
+    width: 202px;
+    height: 59px;
   }
 }
 
-.page-header__logo--text {
+.page-header__logo-mobile-add {
   padding-top: 23px;
 
   @media (min-width: $tablet-width) {

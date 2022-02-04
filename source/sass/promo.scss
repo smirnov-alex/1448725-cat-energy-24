@@ -133,16 +133,6 @@
     opacity: 0.3;
   }
 
-  &--text {
-    display: block;
-    font-family: "Oswald", sans-serif;
-    font-weight: normal;
-    line-height: 18px;
-    text-align: center;
-    text-transform: uppercase;
-    padding: 11px 44px;
-  }
-
   @media (min-width: $tablet-width) {
     width: 244px;
     height: 54px;
@@ -151,15 +141,25 @@
     left: 40px;
     font-size: 20px;
     line-height: 20px;
-
-    &--text {
-      padding: 17px 18px;
-    }
   }
 
   @media (min-width: $desktop-width) {
     margin: 0;
     margin-bottom: 185px;
     position: static;
+  }
+}
+
+.promo__link-text {
+  display: block;
+  font-family: "Oswald", sans-serif;
+  font-weight: normal;
+  line-height: 18px;
+  text-align: center;
+  text-transform: uppercase;
+  padding: 11px 44px;
+
+  @media (min-width: $tablet-width) {
+    padding: 17px 18px;
   }
 }
