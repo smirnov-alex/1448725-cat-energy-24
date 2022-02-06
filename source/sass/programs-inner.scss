@@ -223,16 +223,16 @@
     margin: 0;
     margin-left: 71px;
     margin-right: 67px;
-    margin-bottom: 66px;
+    margin-bottom: 70px;
     border: 1px solid $form-border;
-    padding-top: 30px;
+    padding-top: 25px;
     padding-left: 27px;
     padding-bottom: 34px;
   }
 
   @media (min-width: $desktop-width) {
     margin: 0;
-    padding-top: 30px;
+    padding-top: 26px;
   }
 }
 
@@ -240,13 +240,15 @@
   margin-bottom: 25px;
 
   @media (min-width: $tablet-width) {
+    margin-bottom: 16px;
+
     &:last-child {
       margin-bottom: 0;
     }
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 24px;
+    margin-bottom: 17px;
 
     &:last-child {
       margin-bottom: 0;
@@ -260,6 +262,7 @@
 
   @media (min-width: $tablet-width) {
     padding-left: 61px;
+    display: flex;
   }
 }
 
@@ -283,6 +286,10 @@
 
 .programs-inner__item-label:hover .programs-inner__item-mark {
   border-color: $radiobutton-hover;
+}
+
+.programs-inner__item-label:focus .programs-inner__item-mark {
+  border-color: $special-dark-grey;
 }
 
 .programs-inner__item-input:disabled + .programs-inner__item-mark,
@@ -436,7 +443,7 @@
     margin: 0;
     padding-left: 69px;
     padding-right: 69px;
-    margin-bottom: 99px;
+    margin-bottom: 16px;
 
     &::before {
       content: "";
@@ -586,6 +593,7 @@
 .programs-inner__add-info-label {
   padding-left: 44px;
   position: relative;
+  display: flex;
 
   @media (min-width: $tablet-width) {
     padding-left: 59px;
@@ -610,6 +618,10 @@
 
 .programs-inner__add-info-label:hover .programs-inner__add-info-mark {
   border-color: $radiobutton-hover;
+}
+
+.programs-inner__add-info-label:focus .programs-inner__add-info-mark {
+  border-color: $special-dark-grey;
 }
 
 .programs-inner__add-info-input:disabled + .programs-inner__add-info-mark,
@@ -683,6 +695,8 @@
     margin-left: 71px;
     height: 52px;
     margin-bottom: 72px;
+    font-size: 20px;
+    line-height: 30px;
   }
 
   @media (min-width: $desktop-width) {
@@ -692,9 +706,9 @@
   }
 }
 
-.button__order--text {
+.programs-inner__form-submit-text {
   @media (min-width: $tablet-width) {
     font-size: 20px;
-    line-height: 0px;
+    line-height: 30px;
   }
 }

@@ -21,7 +21,17 @@
 
   @media (min-width: $desktop-width) {
     background: none;
-    padding-top: 38px;
+    padding-top: 116px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 50%;
+      height: 588px;
+      background-color: $green-back;
+    }
   }
 }
 
@@ -31,11 +41,11 @@
   position: relative;
 
   @media (min-width: $tablet-width) {
-    margin-left: 30px;
+    margin-left: 60px;
   }
 
   @media (min-width: $desktop-width) {
-    margin-left: 80px;
+    margin-left: 190px;
     margin-bottom: 86px;
   }
 }
@@ -109,7 +119,7 @@
 
   @media (min-width: $desktop-width) {
     position: absolute;
-    left: 35%;
+    left: 32%;
     top: -82px;
     width: 552px;
   }
@@ -135,7 +145,7 @@
 
   @media (min-width: $tablet-width) {
     width: 244px;
-    height: 54px;
+    height: auto;
     position: absolute;
     top: 230px;
     left: 40px;
@@ -161,5 +171,6 @@
 
   @media (min-width: $tablet-width) {
     padding: 17px 18px;
+    line-height: 30px;
   }
 }
