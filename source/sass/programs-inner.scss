@@ -292,6 +292,10 @@
   border-color: $special-dark-grey;
 }
 
+.programs-inner__item-input:focus ~ .programs-inner__item-text {
+  text-decoration: underline;
+}
+
 .programs-inner__item-input:disabled + .programs-inner__item-mark,
 .programs-inner__item-input:disabled + .programs-inner__item-text {
   opacity: 0.3;
@@ -624,6 +628,10 @@
   border-color: $special-dark-grey;
 }
 
+.programs-inner__add-info-input:focus ~ .programs-inner__add-info-text {
+  text-decoration: underline;
+}
+
 .programs-inner__add-info-input:disabled + .programs-inner__add-info-mark,
 .programs-inner__add-info-input:disabled + .programs-inner__add-info-text {
   opacity: 0.3;
@@ -690,6 +698,22 @@
   min-width: 280px;
   margin-left: 20px;
   margin-right: 20px;
+  text-decoration: none;
+  color: $white;
+  background: $green-base;
+  display: block;
+  height: 40px;
+  padding: 0;
+  border: none;
+  cursor: pointer;
+
+  &:hover {
+    background: $green-hover;
+  }
+
+  &:active span {
+    opacity: 0.3;
+  }
 
   @media (min-width: $tablet-width) {
     margin-left: 71px;
@@ -707,6 +731,15 @@
 }
 
 .programs-inner__form-submit-text {
+  display: block;
+  font-family: "Oswald", sans-serif;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  text-transform: uppercase;
+  padding: 10px 44px;
+
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 30px;
